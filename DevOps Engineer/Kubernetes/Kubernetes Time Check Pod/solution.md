@@ -14,5 +14,10 @@ thor@jump_host ~$ kubectl get pods
 No resources found in default namespace.
 ```
 
+```
+thor@jump_host ~$ kubectl create namespace nautilus
+namespace/nautilus created
+```
+
 
 
