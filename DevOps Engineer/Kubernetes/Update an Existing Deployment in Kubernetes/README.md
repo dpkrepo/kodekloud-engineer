@@ -8,5 +8,9 @@ We already have a deployment named nginx-deployment and service named nginx-serv
 not to delete the deployment and service.
 
 1.) Change the service nodeport from 30008 to 32165
+
 2.) Change replicas count from 1 to 5
+
 3.) Change the image from nginx:1.18 to nginx:latest
+
+Note: The kubectl utility on jump_host has been configured to work with the kubernetes cluster.
