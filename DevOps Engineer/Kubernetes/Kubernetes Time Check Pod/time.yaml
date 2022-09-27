@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: time-config
-  namespace: devops
+  namespace: nautilus
 data:
   TIME_FREQ: "10"
 
@@ -12,7 +12,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: time-check
-  namespace: devops
+  namespace: nautilus
   labels:
     app: time-check
 spec:
@@ -23,7 +23,7 @@ spec:
     - name: time-check
       image: busybox:latest
       volumeMounts:
-        - mountPath: /opt/security/time
+        - mountPath: /opt/devops/time
           name: log-volume
       envFrom:
         - configMapRef:
@@ -31,5 +31,5 @@ spec:
       command: ["/bin/sh", "-c"]
       args:
         [
-          "while true; do date; sleep $TIME_FREQ;done > /opt/security/time/time-check.log",
+          "while true; do date; sleep $TIME_FREQ;done > /opt/devops/time/time-check.log",
         ]
