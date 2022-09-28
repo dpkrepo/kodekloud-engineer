@@ -9,7 +9,7 @@ kubectl get services
 
 check created pods
 ```
-kubectl ger pods
+kubectl get pods
 ```
 
 edit the nginx-service service 
