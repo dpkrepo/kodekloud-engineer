@@ -12,7 +12,7 @@ check created pods
 kubectl ger pods
 ```
 
-edit configuration of a service 
+edit the nginx-service service 
 
 change nodePort from 30008 to 32165
 ```
