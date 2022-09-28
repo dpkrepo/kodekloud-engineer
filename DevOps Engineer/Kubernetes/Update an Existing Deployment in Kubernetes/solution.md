@@ -19,7 +19,7 @@ change nodePort from 30008 to 32165
 kubectl edit service nginx-service
 ```
 
-edit configuration of a deployment
+edit the nginx-deployment deployment
 
 change replicas from 1 to 5 and image from nginx:1.18 to nginx:latest
 ```
