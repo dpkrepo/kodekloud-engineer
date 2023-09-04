@@ -5,7 +5,7 @@ filename: Linux/Create_a_user.md
 --- 
 
 <html>
-<body style="background-color:grey;">
+<body style="background-image: url('../bg.jpg');">
 <center><h1> Create a user</h1></center>
 <h2>Task</h2>
 
