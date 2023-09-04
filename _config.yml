@@ -4,4 +4,4 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - Linux/Create a user.md
+  - aha.md
