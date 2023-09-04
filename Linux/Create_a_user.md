@@ -25,13 +25,13 @@ b. Set its UID to 1233 and home directory to /var/www/kirsty.
 Connect to the App server 1 in Stratos Datacener.
 </p>
 <p>
-<span style=" font-family: monospace;"><span style="color: green;">thor@jump_host ~$</span> ssh tony@stapp01</span>
+<span style=" font-family: monospace; background-color: lightgrey"><span style="color: green;">thor@jump_host ~$</span> ssh tony@stapp01</span>
 </p>
 <p>
 Create a user named kirsty with UID (-u) 1233 and home directory (-d) /var/www/kirsty.
 </p>
 <p>
-<span style=" font-family: monospace;"><span style="color: green;">[tony@stapp01 ~]$</span> sudo useradd kirsty -u 1233 -d /var/www/kirsty</span>
+<span style=" font-family: monospace; background-color: lightgrey"><span style="color: green;">[tony@stapp01 ~]$</span> sudo useradd kirsty -u 1233 -d /var/www/kirsty</span>
 </p>
 <p>
 useradd - create a new user or update default new user information
