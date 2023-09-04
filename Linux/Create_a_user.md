@@ -26,3 +26,11 @@ Create a user named kirsty with UID (-u) 1233 and home directory (-d) /var/www/k
 
 <span style=" font-family: monospace;"><span style="color: green;">[tony@stapp01 ~]$</span> sudo useradd kirsty -u 1233 -d /var/www/kirsty</span>
 
+
+**-u, --uid** *UID*
+
+The numerical value of the user's ID. This value must be unique, unless the -o option is used. The value must be non-negative. The default is to use the smallest ID value greater than 999 and greater than every other user. Values between 0 and 999 are typically reserved for system accounts.
+
+**-d, --home** *HOME_DIR*
+
+The new user will be created using HOME_DIR as the value for the user's login directory. The default is to append the LOGIN name to BASE_DIR and use that as the login directory name. The directory HOME_DIR does not have to exist but will not be created if it is missing.
