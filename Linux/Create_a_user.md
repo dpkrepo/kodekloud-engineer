@@ -3,7 +3,7 @@ title: Linux - Level 1 - Create a User
 layout: template
 filename: Linux/Create_a_user.md
 --- 
-<!DOCTYPE html>
+
 <html>
 <body style="background-color:grey;">
 <center><h1> Create a user</h1></center>
