@@ -10,8 +10,6 @@ b. Set its UID to 1233 and home directory to /var/www/kirsty.
 
 ### Solution
 
-Check a hostname od App server 1 in 
-
 Connect to the App server 1 in Stratos Datacener.
 
 ```console
