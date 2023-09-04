@@ -26,6 +26,7 @@ Create a user named kirsty with UID (-u) 1233 and home directory (-d) /var/www/k
 
 <span style=" font-family: monospace;"><span style="color: green;">[tony@stapp01 ~]$</span> sudo useradd kirsty -u 1233 -d /var/www/kirsty</span>
 
+useradd - create a new user or update default new user information
 
 **-u, --uid** *UID*
 
