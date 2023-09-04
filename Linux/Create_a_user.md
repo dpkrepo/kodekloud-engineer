@@ -18,7 +18,7 @@ b. Set its UID to 1233 and home directory to /var/www/kirsty.
 Connect to the App server 1 in Stratos Datacener.
 
 
-<span style=" font-family: monospace; background-color: black;"><span style="color: red;">thor@jump_host ~$</span> ssh tony@stapp01</span>
+<span style=" font-family: monospace;"><span style="color: red;">thor@jump_host ~$</span> ssh tony@stapp01</span>
 
 
 Create a user named kirsty with UID (-u) 1233 and home directory (-d) /var/www/kirsty.
