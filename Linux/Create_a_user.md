@@ -3,12 +3,10 @@ title: Linux - Level 1 - Create a User
 layout: template
 filename: Linux/Create_a_user.md
 --- 
+<!DOCTYPE html>
 <html>
-<head>
-<title>Linux - Level 1 - Create a User</title>
-</head>
 <body style="background-color:grey;">
-  
+<center><h1> Create a user</h1></center>
 <h2>Task</h2>
 
 <p>For security reasons the xFusionCorp Industries security team has decided to use custom Apache users for each web application hosted, rather than its default user. This will be the Apache user, so it shouldn't use the default home directory. Create the user as per requirements given below:</p>
