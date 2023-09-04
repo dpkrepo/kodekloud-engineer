@@ -3,9 +3,9 @@ title: Linux - Level 1 - Create a User
 layout: template
 filename: Linux/Create_a_user.md
 --- 
-<body style="background-color:aquamarine;>
+<html>
+<body style="background-color:aquamarine;">
   
-
 ### Task
 For security reasons the xFusionCorp Industries security team has decided to use custom Apache users for each web application hosted, rather than its default user. This will be the Apache user, so it shouldn't use the default home directory. Create the user as per requirements given below:
 
@@ -38,4 +38,6 @@ The numerical value of the user's ID. This value must be unique, unless the -o o
 
 The new user will be created using HOME_DIR as the value for the user's login directory. The default is to append the LOGIN name to BASE_DIR and use that as the login directory name. The directory HOME_DIR does not have to exist but will not be created if it is missing.
 
+
 </body>
+</html>
