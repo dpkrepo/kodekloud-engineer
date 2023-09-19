@@ -30,3 +30,5 @@ Check permission and see that read and executable permissions is set up for othe
 ## References
 
 [Set Up Permissions on a Script](https://bash.cyberciti.biz/guide/Setting_up_permissions_on_a_script)
+
+[Chmod](https://en.wikipedia.org/wiki/Chmod)
