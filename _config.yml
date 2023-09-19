@@ -1,8 +1,0 @@
-theme: jekyll-theme-minimal
-title: KodeKloud Engineer Tasks
-description: KodeKloud Engineer Tasks
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
