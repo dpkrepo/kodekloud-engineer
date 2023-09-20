@@ -7,3 +7,9 @@ Here are all the tasks I completed as part of KodeKloud Engineer.
 🐋 [Docker](Docker)
 
 ☸️ [Kubernetes](Kubernetes)
+
+:octocat: [Git](Git)
+
+🚀 [Jenkins](Jenkins)
+
+⚙️ [Ansible](Ansible)
