@@ -142,7 +142,7 @@ Here are all the tasks I completed as part of KodeKloud Engineer.
 ## :octocat: [Git](Git)
 
 - [x] [Git Install and Create Bare Repository](/Git/Git%20Install%20and%20Create%20Bare%20Repository.md)
-- [ ] [Git Clone Repositories](/Git/Git%20Clone%20Repositories.md)
+- [x] [Git Clone Repositories](/Git/Git%20Clone%20Repositories.md)
 - [ ] [Git Fork a Repository](/Git/Git%20Fork%20a%20Repository.md)
 - [ ] [Git Repository Update](/Git/Git%20Repository%20Update.md)
 - [ ] [Git Delete Branches](/Git/Git%20Delete%20Branches.md)
