@@ -22,9 +22,10 @@ Please make sure to define you cron expression like this */10 * * * * (this is j
 For these kind of scenarios requiring changes to be done in a web UI, please take screenshots so that you can share it with us for review in case your task is marked incomplete. You may also consider using a screen recording software such as loom.com to record and share your work.
 ## Solution
 
-Install SSH, Publish over SSH and SSH Credentials plugins.
+Install SSH and SSH Credentials plugins.
 
-![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/d2301ea4-ecb2-4e88-8c7c-4ed42a112f00)
+![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/812b5bcb-d183-4470-a6dc-95631b654629)
+
 
 
 Create a credentials for the DB Server.
@@ -37,11 +38,13 @@ Add SSH host to the Jenkins confgiuration.
 
 ![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/472b30c5-9fb4-436d-8b46-a67d7b726211)
 
-Add SSH server unde Publish over SSH.
 
-![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/b3054c1f-7f9d-4ec9-87c8-49fae9619cb4)
+Generate SSH keys for the DB Server and copy them to the Backup Server.
 
-
+```sh
+[peter@stdb01 ~]$ ssh-keygen
+[peter@stdb01 ~]$ ssh-copy-id clint@stbkp01
+```
 
 Create a job.
 
@@ -49,18 +52,15 @@ Create a job.
 
 Create the build step that creates dump file of db and copy it to the Backup Server.
 
-![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/27d58f58-49b4-47ce-a48d-884a2ad047eb)
+![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/67a55c20-6555-47fa-9bb1-273689121cec)
+
 
 
 
 ```sh
-mysqldump kodekloud_db01 -u kodekloud_roy -p asdfgdsd > db_$(date +%F).sql
+mysqldump kodekloud_db01 -u kodekloud_roy -pasdfgdsd > db_$(date +%F).sql
+scp db_$(date +%F).sql clint@stbkp01:/home/clint/db_backups
 ```
-
-Add build step tah send file to the Backup Server.
-
-![image](https://github.com/AdamLisicki/kodekloud-engineer/assets/96197101/2d37e3cc-bcc8-4353-bf0d-bef3fa425ca5)
-
 
 Run this job every 10 minutes.
 
@@ -69,3 +69,5 @@ Run this job every 10 minutes.
 
 
 ## References
+
+[Take MySQL backup From Jenkins Job](https://thedbadmin.com/take-mysql-backup-from-jenkins-job/)
