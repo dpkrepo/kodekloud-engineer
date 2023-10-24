@@ -41,3 +41,5 @@ Restart sshd service.
 ```
 
 ## References
+
+[Setting Up an SFTP Server](https://tecadmin.net/setup-sftp-server-on-centos/)
