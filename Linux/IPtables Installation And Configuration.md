@@ -38,22 +38,18 @@ And enable it so it will start after system reboot.
 Created symlink /etc/systemd/system/multi-user.target.wants/iptables.service → /usr/lib/systemd/system/iptables.service.
 ```
 
-Remove old configuration.
-```sh
-[tony@stapp01 ~]$ sudo iptables -F
-```
-
-Add rule that block port 6400 except for LBR host.
+Add rules that block port 6400 except for LBR host.
 
 ```sh
-[tony@stapp01 ~]$ sudo iptables -A INPUT -p tcp -i eth0 ! -s 172.16.238.14 --dport 6400 -j REJECT
+[tony@stapp01 ~]$ sudo iptables -A INPUT -p tcp --destination-port 6400 -s 172.16.238.14 -j ACCEPT
+[tony@stapp01 ~]$ sudo iptables -A INPUT -p tcp --destination-port 6400 -j DROP
 ```
-Check if rule for the 6400 port appears.
+
+Add rule that block icmp protocol.
 ```sh
-[tony@stapp01 ~]$ sudo iptables -nL | grep 6400
-# Warning: iptables-legacy tables present, use iptables-legacy to see them
-DROP       tcp  -- !172.16.238.14        0.0.0.0/0            tcp dpt:6400
+[tony@stapp01 ~]$ sudo iptables -R INPUT 5 -p icmp -j REJECT
 ```
+
 Save rules to remain them after reboot.
 
 ```sh
