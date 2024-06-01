@@ -10,7 +10,7 @@ Key pair type must be rsa
 
 
 
-## Resoluton
+## Solution
 
 1. Login to the AWS Console and go to EC2 console.
 2. In "Network&Security" section there is a tab "Key Pairs".
