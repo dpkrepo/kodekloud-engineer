@@ -201,7 +201,7 @@ thor@jump_host ~$ kubectl get pod nginx-phpfpm -o yaml > nginx-phpfpm.yaml
 
 Replace all instances of `/usr/share/nginx/html` to `/var/www/html` in this file.
 ```sh
-thor@jump_host ~$ sed -i 's@/usr/share/nginx/html@/var/www/html@g' yourfile.yml
+thor@jump_host ~$ sed -i 's@/usr/share/nginx/html@/var/www/html@g' nginx-phpfpm.yaml
 ```
 Force replacment of the pod.
 ```sh
